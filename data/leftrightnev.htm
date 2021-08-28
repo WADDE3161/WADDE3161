@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<title>Wadde</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#leftMenu a {padding:6px;margin:3px;width:80%;border-radius:12px; float:left;border:2px solid orange;}
+#rightMenu a {padding:6px;margin:3px;width:80%;border-radius:12px;float:left;border:2px solid orange;}
+#rightMenu a:hover { padding:10px;border:3px solid green; }
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+<body style="text-align:center">
+
+
+
+<div style="display:none;left:0;height:100%;width:130px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto;" id="leftMenu">
+  <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<div style="display:none;right:0; height:100%;width:130px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto; " id="rightMenu">
+  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+ <a href="#Mumbai City  ">Mumbai City</a>
+<a href="#Mumbai Suburban  ">Mumbai Suburban </a> 
+<a href="#Nagpur  ">Nagpur</a> 
+<a href="#Nanded  ">Nanded</a>
+<a href="#Nandurbar  ">Nandurbar</a> 
+<a href="#Nashik  ">Nashik</a> 
+<a href="#Osmanabad  ">Osmanabad</a>
+<a href="#Pune  ">Pune</a>	 
+<a href="#Akola  ">Akola</a>
+<a href="#Amravati  ">Amravati</a>
+<a href="#Aurangabad  ">Aurangabad</a> 
+<a href="#Beed  ">Beed</a>
+<a href="#Bhandara  ">Bhandara</a>
+<a href="#Buldhana  ">Buldhana</a> 
+<a href="#Chandrapur  ">Chandrapur</a>
+<a href="#Dhule  ">Dhule</a>
+<a href="#Gadchiroli  ">Gadchiroli</a>
+<a href="#Gondia  ">Gondia</a> 
+<a href="#Hingoli  ">Hingoli</a> 
+<a href="#Jalgaon  ">Jalgaon</a>
+<a href="#Jalna  ">Jalna</a>
+<a href="#Kolhapur  ">Kolhapur</a> 
+<a href="#Latur  ">Latur</a> 
+<a href="#Palghar  ">Palghar</a>
+<a href="#Parbhani  ">Parbhani</a>
+<a href="#Raigad  ">Raigad</a> 
+<a href="#Ratnagiri  ">Ratnagiri</a>
+<a href="#Sangli  ">Sangli</a>
+<a href="#Satara  ">Satara</a>
+<a href="#Sindhudurg  ">Sindhudurg</a>
+<a href="#Solapur  ">Solapur</a>
+<a href="#Thane  ">Thane</a>
+<a href="#Wardha  ">Wardha</a>
+<a href="#Washim  ">Washim</a>
+<a href="#Yavatmal">Yavatmal</a>
+  </div>
+<h2>Popup element</h2>
+<div>
+<div class="popup" onclick="myFunction();">Click me to toggle the popup!
+  <span class="popuptext" id="myPopup"><button style="padding:6px;margin:3px;width:80%;border-radius:12px;border:2px solid orange;" onclick="openLeftMenu();">DTA</button>
+ </span>
+</div>
+  <button style="padding:6px;margin:3px;width:80%;border-radius:12px;border:2px solid orange;" onclick="openLeftMenu();">DTA</button>
+  <button style="padding:6px;margin:3px;width:80%;border-radius:12px;border:2px solid orange;" onclick="openRightMenu();">CIY</button>
+</div>
+<div>
+  <div class="popup" onclick="ion();">Click me to togp!
+  <span class="popuptext" id="opup"><button style="padding:6px;margin:3px;width:80%;border-radius:12px;border:2px solid orange;" onclick="openLeftMenu();">DTA</button>
+ </span>
+</div>
+</div>
+     
+<script>
+function openLeftMenu() {
+  document.getElementById("leftMenu").style.display = "block";
+}
+
+function closeLeftMenu() {
+  document.getElementById("leftMenu").style.display = "none";
+}
+
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
+}
+</script>
+     <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+function ion() {
+  var popup = document.getElementById("opup");
+  popup.classList.toggle("show");
+}
+</script>
+</body>
+</html>
