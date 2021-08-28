@@ -57,8 +57,8 @@
 <a href="#Yavatmal">Yavatmal</a>
   </div>
 
-  <button style="padding:6px;margin:3px;width:80%;border-radius:12px;border:2px solid orange;" onclick="document.getElementById("leftMenu").style.display = block">DTA</button>
-  <button style="padding:6px;margin:3px;width:80%;border-radius:12px;border:2px solid orange;" onclick="document.getElementById("rightMenu").style.display = block">CIY</button>
+  <button style="padding:6px;margin:3px;width:80%;border-radius:12px;border:2px solid orange;" onclick="openLeftMenu();">DTA</button>
+  <button style="padding:6px;margin:3px;width:80%;border-radius:12px;border:2px solid orange;" onclick="openRightMenu();">CIY</button>
   
      
 <script>
@@ -71,7 +71,7 @@ function closeLeftMenu() {
 }
 
 function openRightMenu() {
-  
+  document.getElementById("rightMenu").style.display = "block";
 }
 
 function closeRightMenu() {
