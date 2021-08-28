@@ -124,7 +124,7 @@
 </div>
 <div>
   <div class="popup" onclick="ion();">Click me to togp!
-  <span class="popuptext" id="popup"><button style="padding:6px;margin:3px;width:80%;border-radius:12px;border:2px solid orange;" onclick="openLeftMenu();">DTA</button>
+  <span class="popuptext" id="opup"><button style="padding:6px;margin:3px;width:80%;border-radius:12px;border:2px solid orange;" onclick="openLeftMenu();">DTA</button>
  </span>
 </div>
 </div>
@@ -153,7 +153,8 @@ function myFunction() {
   popup.classList.toggle("show");
 }
 function ion() {
-  $("#popup").classList.toggle("show");
+  var popup = document.getElementById("opup");
+  popup.classList.toggle("show");
 }
 </script>
 </body>
