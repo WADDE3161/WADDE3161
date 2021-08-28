@@ -1,1 +1,56 @@
-hi
+
+    #statedist {
+        float: right;
+    }
+    
+    #inputState {
+        width: 140px;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        border: 2px solid orange;
+        border-radius: 9px;
+        background-color: red;
+    }
+    
+    #inputState:hover {
+        background-color: whitesmoke;
+        border: 2px solid green;
+        padding: 5px;
+    }
+    
+    #inputState option {
+        text-align: center;
+        padding: 6px;
+        margin: 3px;
+        width: 90%;
+        border-radius: 12px;
+        float: left;
+        border: 2px solid orange;
+    }
+    
+    #inputState option:hover {
+        padding: 10px;
+        border: 3px solid green;
+    }
+    
+    #inputDistrict {
+        width: 150px;
+    }
+    
+    #inputDistrict a {
+        text-align: center;
+        padding: 6px;
+        margin: 3px;
+        width: 90%;
+        border-radius: 12px;
+        float: left;
+        border: 2px solid orange;
+    }
+    
+    #inputDistrict a:hover {
+        padding: 10px;
+        border: 3px solid green;
+    }
+
+
