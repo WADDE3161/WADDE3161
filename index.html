@@ -121,7 +121,10 @@
 </div>
   <button style="padding:6px;margin:3px;width:80%;border-radius:12px;border:2px solid orange;" onclick="openLeftMenu();">DTA</button>
   <button style="padding:6px;margin:3px;width:80%;border-radius:12px;border:2px solid orange;" onclick="openRightMenu();">CIY</button>
-  
+  <div class="popup" onclick="ion(#popup)">Click me to toggle the popup!
+  <span class="popuptext" id="popup"><button style="padding:6px;margin:3px;width:80%;border-radius:12px;border:2px solid orange;" onclick="openLeftMenu();">DTA</button>
+ </span>
+</div>
      
 <script>
 function openLeftMenu() {
@@ -145,6 +148,9 @@ function closeRightMenu() {
 function myFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
+}
+function ion(#getid) {
+  $("#getid").classList.toggle("show");
 }
 </script>
 </body>
