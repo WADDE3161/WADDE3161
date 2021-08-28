@@ -4,14 +4,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
 
-<div style="display:none;left:0;height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto;" id="leftMenu">
+<div style="display:none;left:0;height:100%;width:100px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto;" id="leftMenu">
   <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
   <a href="#" class="w3-bar-item w3-button">Link 1</a>
   <a href="#" class="w3-bar-item w3-button">Link 2</a>
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
 </div>
 
-<div style="display:none;right:0; height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto; " id="rightMenu">
+<div style="display:none;right:0; height:100%;width:100px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto; " id="rightMenu">
   <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
  <a href="#Mumbai City  ">Mumbai City</a>
 <a href="#Mumbai Suburban  ">Mumbai Suburban </a> 
@@ -50,8 +50,8 @@
 <a href="#Yavatmal">Yavatmal</a>
   </div>
 
-  <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
-  <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+  <button style="width:100%;padding:5px;" onclick="openLeftMenu()">&#9776;</button>
+  <button style="width:100%;padding:5px;" onclick="openRightMenu()">&#9776;</button>
   
      
 <script>
